@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "FoodKing",
+    "description": "FoodKing is a full-stack food sharing web application that connects donors and receivers to share surplus food. It allows users to add, update, request, and manage food items with secure authentication and responsive design.",
+    "features": [
+      "Email/Password & Google-based Authentication",
+      "CRUD operations for food items",
+      "TanStack Query for data fetching & mutation",
+      "Clean & recruiter-friendly UI with proper spacing"
+    ],
+    "technology": ["React", "Tailwind CSS", "Firebase", "Node.Js", "Express.js", "MongoDB"],
+    "live_link": "https://a11-food-king.netlify.app",
+    "github": "https://github.com/TarekNexus/Food-King-client",
+    "image": "https://i.ibb.co/Q3fGrJgH/pp.png"
+  },
+  {
+    "id": 2,
+    "title": "Green Plants",
+    "description": "Green Plants is a full-stack, mobile-responsive web application that empowers users to track and manage the care of their houseplants. Designed for plant enthusiasts, this platform offers features like adding new plants, setting watering schedules, tracking health, and more — all with secure, personalized user dashboards.",
+    "features": [
+      "Plant Management System",
+      "Dashboard with Overview and Stats",
+      "Secure Authentication",
+      "Dark/Light Theme Toggle"
+    ],
+    "technology": ["React", "Tailwind CSS", "Firebase", "Node.Js", "Express.js", "MongoDB"],
+    "live_link": "https://a10-green-plants.netlify.app",
+    "github": "https://github.com/TarekNexus/Green-Plants-Client",
+    "image": "https://i.ibb.co/BKZBNbML/project-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Cratezy - Subscription Box Service Platform",
+    "description": "Cratezy is a personalized subscription box platform that allows users to browse, subscribe to, and manage monthly curated boxes tailored to their interests.",
+    "features": [
+      "Dynamic Content",
+      "Protected Routes",
+      "Authentication",
+      "Responsive UI"
+    ],
+    "technology": ["React", "Firebase", "Tailwind CSS"],
+    "live_link": "https://a9-cratezy-tarek.netlify.app",
+    "github": "https://github.com/TarekNexus/Cratezy-Subscription-Services",
+    "image": "https://i.ibb.co/s9NJtbnc/project-3.png"
+  }
+]
