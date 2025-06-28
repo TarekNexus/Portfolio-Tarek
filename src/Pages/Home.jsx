@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="">
       <Hero></Hero>
-      <div className="relative ">
+      <div className="relative bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,#003934_100%)] ">
         <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#003934_100%)]"></div>
 
         <About></About>

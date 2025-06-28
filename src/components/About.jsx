@@ -28,6 +28,7 @@ const About = () => {
   ];
   return (
     <section id="about" className="relative scroll-mt-14 bg mx-auto py-8">
+      
       <div className="max-w-[1600px] w-11/12 mx-auto px-2">
         {/* Heading above the card */}
         <h2 className="text-4xl font-bold text-center text-[#003934] mb-2">
@@ -35,8 +36,8 @@ const About = () => {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-center text-lg text-gray-700 mb-8 font-medium flex items-center justify-center gap-2">
-          <FaRocket className="text-red-500 text-xl" />
+        <p className="text-center text-lg  mb-8 font-medium flex items-center justify-center gap-2">
+          <FaRocket className="text-[#003934] text-xl" />
           Building Fast, Scalable & User-Friendly Web Apps
         </p>
 

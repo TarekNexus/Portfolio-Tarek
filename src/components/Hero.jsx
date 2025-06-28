@@ -3,13 +3,17 @@ import { Download, Twitter, Linkedin, Github } from "lucide-react";
 import profileImg from "../assets/hero - Copy.png";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import TechBackground from "./TechBackground";
 
 const Hero = () => {
   return (
-    <section id="hero" className="scroll-mt-48">
+    <section id="hero" className="scroll-mt-48 py-4 md:py-0 ">
       {/* back */}
       <div className="relative">
-        <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#003934_100%)]"></div>
+
+<div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+
         {/* animated container */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -36,7 +40,7 @@ const Hero = () => {
               <a
                 href="/cv.pdf"
                 download
-                className="flex items-center gap-2 border border-[#003934] text-[#003934] font-medium px-6 py-3 rounded-full hover:bg-[#003934]/10 transition"
+                className="flex items-center gap-2 border bg-[#003934] text-white font-medium px-6 py-3 rounded-full hover:bg-[#00291f] transition"
               >
                 Download CV <Download size={16} />
               </a>
@@ -72,7 +76,8 @@ const Hero = () => {
           </div>
 
           {/* 👉 Right Image */}
-          <div className="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+          <div className="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0 relative">
+          <TechBackground></TechBackground>
             <div className="w-[420px] h-[530px]">
               <img
                 src={profileImg}
