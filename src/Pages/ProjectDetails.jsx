@@ -1,8 +1,11 @@
-import React, { use } from "react";
+import React, { use, useEffect } from "react";
 import { useParams, useNavigate } from "react-router"; // ✅ added useNavigate
 const projectDataPromise=fetch("/ProjectData.json").then(res=>res.json()) // ✅ adjust path if needed
 
 const ProjectDetails = () => {
+   useEffect(() => {
+    document.title = "TAREK | PROJECT DETAILS";
+  }, []);
    const projectData=use(projectDataPromise)
   const { id } = useParams();
   const navigate = useNavigate(); // ✅ hook for navigation

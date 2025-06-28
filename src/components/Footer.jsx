@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-base-200 text-base-content rounded p-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left Section */}
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col items-center ">
           <Link to="/">
             <div className="flex items-center gap-4">
               <img className="w-40" src={logo} alt="Logo" />

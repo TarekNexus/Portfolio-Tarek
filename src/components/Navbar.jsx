@@ -1,32 +1,32 @@
 import React from "react";
 import logo from "../assets/view.png";
-
+import { Link } from "react-router";
 
 const Navbar = () => {
   const Links = (
     <>
       <li>
-        <a href="#hero" className="hover:text-red-500 hover:bg-non">
+        <a href="#hero" className="hover:text-[#003934] ">
           Home
         </a>
       </li>
       <li>
-        <a href="#about" className="hover:text-red-500">
+        <a href="#about" className="hover:text-[#003934] ">
           About
         </a>
       </li>
       <li>
-        <a href="#skill" className="hover:text-red-500">
-          Skill
+        <a href="#skill" className="hover:text-[#003934]">
+          Skills
         </a>
       </li>
-       <li>
-        <a href="#education" className="hover:text-red-500">
+      <li>
+        <a href="#education" className="hover:text-[#003934]">
           Education
         </a>
       </li>
       <li>
-        <a href="#projects" className="hover:text-red-500">
+        <a href="#projects" className="hover:text-[#003934]">
           Projects
         </a>
       </li>
@@ -37,8 +37,12 @@ const Navbar = () => {
     <nav className="sticky top-0 z-20">
       <div className="navbar w-full px-4 sm:px-8 md:px-12 lg:px-40 mx-auto border-b border-gray-200 bg-white/20 backdrop-blur-sm">
         {/* Navbar Start */}
+
         <div className="navbar-start">
-          <img className="w-50" src={logo} alt="Logo" />
+          <Link to="/">
+            {" "}
+            <img className="w-50" src={logo} alt="Logo" />
+          </Link>
         </div>
 
         {/* Navbar Center (Desktop Menu) */}
@@ -51,9 +55,9 @@ const Navbar = () => {
           {/* Contact Button (hidden on small screens) */}
           <a
             href="#contact"
-            className="hidden bg-[#003934] lg:inline-block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base text-white font-semibold hover:bg-[#00796b] rounded-3xl shadow-md transition duration-300"
+            className="hidden bg-[#003934] lg:inline-block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base text-white font-semibold hover:bg-[#00291f] rounded-3xl shadow-md transition duration-300"
           >
-            Contact
+            Contact Me
           </a>
 
           {/* Dropdown for small screens */}
