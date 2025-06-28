@@ -46,7 +46,7 @@ const EducationCard = ({ item }) => (
 const EducationSection = () => {
   return (
     <section id="education" className="relative scroll-mt-12 py-16 px-4  text-black">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
+     
       <div className="max-w-[1600px] w-11/12 mx-auto">
         <h2 className="text-3xl font-bold text-center text-[#003934] mb-2">
           🎓 Education

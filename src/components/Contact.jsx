@@ -62,11 +62,11 @@ const Contact = () => {
           <div className="space-y-5 text-lg">
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-[#003934] text-xl" />
-              <span>alaminislam43.bd@email.com</span>
+              <span>muhammadtarek5920@gmail.com</span>
             </div>
             <div className="flex items-center gap-4">
               <FaPhoneAlt className="text-[#003934] text-xl" />
-              <span>+880 182 1858 917</span>
+              <span>+880 1778188448</span>
             </div>
             <div className="flex items-center gap-4">
               <FaWhatsapp className="text-[#003934] text-xl" />

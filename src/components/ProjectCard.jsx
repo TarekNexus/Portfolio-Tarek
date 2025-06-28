@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="h-auto p-3 md:p-6 border border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6 text-black">
+    <div className="h-auto p-3 md:p-6 border sticky top-0 border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6 text-black">
       {/* Image */}
       <div className="w-full md:w-1/2 h-64 md:h-[400px] border border-[#003934] rounded-xl overflow-hidden">
         {project.image ? (
@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
               <button
                 key={idx}
                 type="button"
-                className="bg-white/20 backdrop-blur-sm border border-black  text-xs font-semibold px-3 py-1 rounded-full hover:bg-white/30 transition"
+                className="bg-[#003934] text-white px-3 py-1 rounded-full text-sm"
               >
                 {tech}
               </button>
