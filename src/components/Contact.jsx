@@ -75,7 +75,7 @@ const Contact = () => {
       <div className="max-w-[1600px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
         {/* Left Card: Contact Info */}
         <motion.div
-          className="border border-gray-200 bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-6 sm:p-8 space-y-6"
+          className="border border-[#003934] bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-6 sm:p-8 space-y-6"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -105,7 +105,7 @@ const Contact = () => {
 
         {/* Right Card: Contact Form */}
         <motion.div
-          className="border border-gray-200 bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-6 sm:p-8"
+          className="border border-[#003934] bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-6 sm:p-8"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}

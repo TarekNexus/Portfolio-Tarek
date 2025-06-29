@@ -1,12 +1,26 @@
 import React from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaReact } from "react-icons/fa";
 import { Link } from "react-router";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { AiOutlineEye } from "react-icons/ai";
+import { TbDetails } from "react-icons/tb";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="h-auto p-3 md:p-6 border sticky top-0 border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6 text-black">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="h-auto p-3 md:p-6 border sticky top-0 border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6 text-black"
+    >
       {/* Image */}
-      <div className="w-full md:w-1/2 h-64 md:h-[400px] border border-[#003934] rounded-xl overflow-hidden">
+      <motion.div
+        whileHover={{ scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="w-full md:w-1/2 h-64 md:h-[400px] border border-[#003934] rounded-xl overflow-hidden"
+      >
         {project.image ? (
           <img
             className="w-full h-full object-cover"
@@ -18,10 +32,16 @@ const ProjectCard = ({ project }) => {
             No Image Available
           </div>
         )}
-      </div>
+      </motion.div>
 
       {/* Text */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="w-full md:w-1/2 flex flex-col justify-center space-y-4"
+      >
         <h3 className="text-2xl font-semibold">
           {project.title || "Untitled Project"}
         </h3>
@@ -29,28 +49,25 @@ const ProjectCard = ({ project }) => {
           {project.description || "No description provided."}
         </p>
 
-        <p>feature</p>
-        {
-          <ul className="list-disc list-inside text-gray-800 space-y-1">
-            {project.features.map((feature, idx) => (
-              <li key={idx}>{feature}</li>
-            ))}
-          </ul>
-        }
+        <h2 className="text-xl font-semibold mb-2">Features:</h2>
+        <ul className="list-disc list-inside text-gray-800 space-y-1">
+          {project.features.map((feature, idx) => (
+            <li key={idx}>{feature}</li>
+          ))}
+        </ul>
 
         {/* Tech badges */}
         <div className="flex flex-wrap gap-2 pt-2">
-          {project.technology.map((tech, idx) => {
-            return (
-              <button
-                key={idx}
-                type="button"
-                className="bg-[#003934] text-white px-3 py-1 rounded-full text-sm"
-              >
-                {tech}
-              </button>
-            );
-          })}
+          {project.technology.map((tech, idx) => (
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              key={idx}
+              type="button"
+              className="bg-[#003934] text-white px-3 py-1 rounded-full text-sm"
+            >
+              {tech}
+            </motion.button>
+          ))}
         </div>
 
         {/* Links */}
@@ -61,7 +78,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-xl shadow flex items-center gap-2"
           >
-            Live <FaExternalLinkAlt />
+            Live <AiOutlineEye />
           </a>
 
           <a
@@ -72,15 +89,19 @@ const ProjectCard = ({ project }) => {
           >
             GitHub <FaGithub />
           </a>
+
           <Link
             to={`/project/${project.id}`}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl shadow"
           >
-            Details
+            <span className="flex items-center gap-2">
+              {" "}
+              Details <TbDetails />
+            </span>
           </Link>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
