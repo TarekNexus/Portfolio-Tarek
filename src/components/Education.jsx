@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
+// Data
 const educationData = [
   {
     degree: "Diploma in Engineering",
@@ -22,22 +23,20 @@ const educationData = [
 const EducationCard = ({ item, index }) => (
   <motion.div
     custom={index}
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{
-      delay: 0.2 + index * 0.3,
-      duration: 0.8,
-      ease: "easeOut",
-    }}
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.5, duration: 0.6 }}
     viewport={{ once: true }}
     className="flex-1 border border-[#003934] bg-white/20 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:scale-[1.03] transition duration-300 text-black"
   >
     <h3 className="text-lg font-semibold">{item.degree}</h3>
-    <p className="text-sm text-gray-700 mb-1">
-      <strong> Institute:</strong> {item.university}
-    </p>
+
     <p className="text-sm text-gray-700 mb-1">
       <strong>Technology Name :</strong> {item.subject}
+    </p>
+
+    <p className="text-sm text-gray-700 mb-1">
+      <strong> Institute:</strong> {item.university}
     </p>
     <p className="text-sm text-gray-700 mb-1">
       <strong>Year:</strong> {item.graduation_date}
@@ -49,14 +48,6 @@ const EducationCard = ({ item, index }) => (
 );
 
 const EducationSection = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading delay for 1.5 seconds
-    const timer = setTimeout(() => setLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section
       id="education"
@@ -67,8 +58,9 @@ const EducationSection = () => {
         <motion.h2
           className="text-3xl font-bold text-center text-[#003934] mb-2"
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
         >
           Education
         </motion.h2>
@@ -77,28 +69,20 @@ const EducationSection = () => {
         <motion.p
           className="text-center text-gray-600 mb-10 max-w-xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
         >
           Academic background focused on Computer Science and IT, supporting my
           skills in software development and MERN-stack web technologies
         </motion.p>
 
-        {loading ? (
-          <div className="flex justify-center items-center h-40">
-            {/* Spinner */}
-            <motion.span
-              className="inline-block h-10 w-10 border-4 border-[#003934] border-t-transparent rounded-full animate-spin"
-              aria-label="loading spinner"
-            />
-          </div>
-        ) : (
-          <div className="flex flex-wrap justify-center gap-6">
-            {educationData.map((item, idx) => (
-              <EducationCard key={idx} item={item} index={idx} />
-            ))}
-          </div>
-        )}
+        {/* Cards */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {educationData.map((item, idx) => (
+            <EducationCard key={idx} item={item} index={idx} />
+          ))}
+        </div>
       </div>
     </section>
   );

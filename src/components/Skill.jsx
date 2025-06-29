@@ -1,5 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -39,7 +41,7 @@ const SkillCard = ({ icon, name }) => (
       border: `2px solid ${PRIMARY_COLOR}`,
     }}
   >
-    <div className="text-3xl sm:text-4xl mb-2">{icon}</div>
+    <div className="text-3xl sm:text-4xl mb-2"><strong>{icon}</strong></div>
     <p
       className="text-xs sm:text-sm font-semibold text-center px-2"
       style={{ color: PRIMARY_COLOR }}
@@ -53,23 +55,28 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="w-full   mx-auto  py-16 px-4 text-center relative overflow-hidden"
+      className="w-full mx-auto py-16 px-4 text-center relative overflow-hidden"
     >
-      
       <div className="max-w-[1600px] w-11/12 mx-auto">
-        <h2
-          className="text-4xl font-bold mb-2"
-          style={{ color: PRIMARY_COLOR }}
+        <motion.h2
+          className="text-3xl font-bold text-center text-[#003934] mb-2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
         >
           My Skills
-        </h2>
-        <p
+        </motion.h2>
+        <motion.p
           className="mb-10 text-sm md:text-base max-w-xl mx-auto"
-          style={{ color: "#4a6158" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          viewport={{ once: true }}
         >
           Skilled in modern frontend and backend technologies to build
-          full-stack, interactive web applications.
-        </p>
+          MERN-stack, interactive web applications.
+        </motion.p>
 
         <Marquee gradient={false} speed={50} pauseOnHover loop={0}>
           {skills.map((skill, index) => (

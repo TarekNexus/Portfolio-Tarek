@@ -1,6 +1,6 @@
 import React, { use } from "react";
 import ProjectCard from "./ProjectCard"; // adjust path if needed
-import { FaRocket } from "react-icons/fa";
+
 
 const projectDataPromise = fetch("/ProjectData.json").then((res) => res.json());
 
