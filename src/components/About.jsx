@@ -1,34 +1,67 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import image from "../assets/about.jpg";
 
 const About = () => {
   return (
     <section id="about" className="relative scroll-mt-14 bg mx-auto py-8">
       <div className="max-w-[1600px] w-11/12 mx-auto px-2">
-        {/* Heading above the card */}
-        <h2 className="text-3xl font-bold text-center text-[#003934] mb-2">
+        {/* Heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-center text-[#003934] mb-2"
+        >
           About Me
-        </h2>
+        </motion.h2>
 
         {/* Subtitle */}
-        <p className="mb-10 text-sm md:text-base text-center max-w-xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-10 text-sm md:text-base text-center max-w-xl mx-auto"
+        >
           I'm a MERN Stack Developer with a passion for clean code and elegant
           design. I specialize in building responsive, user-focused web
           applications.
-        </p>
+        </motion.p>
 
-        {/* Glass card container */}
-        <div className="h-auto p-3 md:p-6 border border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6">
-          {/* Image half */}
-          <div className="w-full md:w-1/2 h-64 md:h-[400px] rounded-xl overflow-hidden">
+        {/* Card container */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="h-auto p-3 md:p-6 border border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6"
+        >
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="w-full md:w-1/2 h-64 md:h-[400px] rounded-xl overflow-hidden"
+          >
             <img
               className="w-full h-full object-cover"
               src={image}
               alt="Md. Tarek"
             />
-          </div>
+          </motion.div>
 
-          <div className="w-full lg:w-1/2">
+          {/* Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6, duration: 0.7 }}
+            viewport={{ once: true }}
+            className="w-full lg:w-1/2"
+          >
             <h2 className="text-xl font-bold text-[#003934] mb-4">
               Professional & Focused
             </h2>
@@ -62,8 +95,8 @@ const About = () => {
                 Problem Solver & Lifelong Learner
               </p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
