@@ -71,35 +71,37 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Links */}
-        <div className="flex gap-4 pt-4 flex-wrap">
-          <a
-            href={project.live_link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-xl shadow flex items-center gap-2"
-          >
-            Live <AiOutlineEye />
-          </a>
+      <div className="flex gap-4 pt-4 flex-wrap">
+  <a
+    href={project.live_link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-xl shadow flex items-center gap-2
+               transition duration-300 ease-in"
+  >
+    Live <AiOutlineEye />
+  </a>
 
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 hover:bg-black text-white px-4 py-2 rounded-xl shadow flex items-center gap-2"
-          >
-            GitHub <FaGithub />
-          </a>
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gray-800 hover:bg-black text-white px-4 py-2 rounded-xl shadow flex items-center gap-2
+               transition duration-300 ease-in"
+  >
+    GitHub <FaGithub />
+  </a>
 
-          <Link
-            to={`/project/${project.id}`}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl shadow"
-          >
-            <span className="flex items-center gap-2">
-              {" "}
-              Details <TbDetails />
-            </span>
-          </Link>
-        </div>
+  <Link
+    to={`/project/${project.id}`}
+    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl shadow
+               transition duration-300 ease-in"
+  >
+    <span className="flex items-center gap-2">
+      Details <TbDetails />
+    </span>
+  </Link>
+</div>
       </motion.div>
     </motion.div>
   );
