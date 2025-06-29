@@ -45,6 +45,8 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
             viewport={{ once: true }}
+            whileHover={{ scale: 1.03 }}
+        
             className="w-full md:w-1/2 h-64 md:h-[400px] rounded-xl overflow-hidden"
           >
             <img
