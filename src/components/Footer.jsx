@@ -4,7 +4,7 @@ import logo from "../assets/view.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-base-200 text-base-content rounded p-10">
+    <footer className="bg-[#e0e0e0] text-base-content  p-5">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left Section */}
         <div className="flex flex-col items-center ">
@@ -19,13 +19,25 @@ const Footer = () => {
         {/* Right Section */}
         <div className="flex items-center gap-6">
           <div className="flex gap-4 text-xl text-gray-500">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn className="hover:text-gray-700" />
             </a>
-            <a href="https://www.instagram.com/muh.ammadtarek" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/muh.ammadtarek"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="hover:text-gray-700" />
             </a>
-            <a href="https://github.com/TarekNexus" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/TarekNexus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="hover:text-gray-700" />
             </a>
           </div>
