@@ -31,14 +31,14 @@ const About = () => {
       
       <div className="max-w-[1600px] w-11/12 mx-auto px-2">
         {/* Heading above the card */}
-        <h2 className="text-4xl font-bold text-center text-[#003934] mb-2">
+        <h2 className="text-3xl font-bold text-center text-[#003934] mb-2">
           About Me
         </h2>
 
         {/* Subtitle */}
-        <p className="text-center text-lg  mb-8 font-medium flex items-center justify-center gap-2">
-          <FaRocket className="text-[#003934] text-xl" />
-          Building Fast, Scalable & User-Friendly Web Apps
+        <p className="mb-10 text-sm md:text-base text-center max-w-xl mx-auto">
+     I'm a MERN Stack Developer with a passion for clean code and elegant design.
+I specialize in building responsive, user-focused web applications.
         </p>
 
         {/* Glass card container */}
