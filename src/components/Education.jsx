@@ -51,7 +51,7 @@ const EducationSection = () => {
   return (
     <section
       id="education"
-      className="relative scroll-mt-12 py-16 px-4 text-black"
+      className="relative scroll-mt-12 py-16 md:px-4 text-black"
     >
       <div className="max-w-[1600px] w-11/12 mx-auto">
         {/* Title */}

@@ -55,7 +55,7 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="w-full mx-auto py-16 px-4 text-center relative overflow-hidden"
+      className="w-full mx-auto py-16 md:px-4 text-center relative overflow-hidden"
     >
       <div className="max-w-[1600px] w-11/12 mx-auto">
         <motion.h2

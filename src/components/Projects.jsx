@@ -7,7 +7,7 @@ const projectDataPromise = fetch("/ProjectData.json").then((res) => res.json());
 const Projects = () => {
   const projectData = use(projectDataPromise);
   return (
-    <section id="projects" className="py-16  px-4 scroll-mt-12 ">
+    <section id="projects" className="py-16  md:px-4 scroll-mt-12 ">
       {/* Heading above the card */}
       <h2 className="text-4xl font-bold text-center text-[#003934] mb-2">
         Projects
