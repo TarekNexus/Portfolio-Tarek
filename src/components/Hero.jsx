@@ -7,7 +7,7 @@ import TechBackground from "./TechBackground";
 
 const Hero = () => {
   return (
-    <section id="hero" className="scroll-mt-48 py-4  ">
+    <section id="hero" className="scroll-mt-48 py-4 md:py-0 ">
       {/* back */}
       <div className="relative">
 
