@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="h-auto p-3 md:p-6 border sticky top-0 border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6 text-black"
+      className="h-auto p-3 md:p-6 border md:sticky md:top-0 border-[#003934] bg-white/20 backdrop-blur-sm rounded-2xl shadow-lg flex flex-col md:flex-row gap-6 text-black"
     >
       {/* Image */}
       <motion.div

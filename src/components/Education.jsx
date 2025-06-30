@@ -78,7 +78,7 @@ const EducationSection = () => {
         </motion.p>
 
         {/* Cards */}
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
           {educationData.map((item, idx) => (
             <EducationCard key={idx} item={item} index={idx} />
           ))}
