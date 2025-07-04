@@ -12,10 +12,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_or79npg",
-        "template_l5hc58m",
+        "service_qd6k7ns",
+        "template_1fais7o",
         form.current,
-        "2KCQ-HpTOaq-tyFsj"
+        "Y7QXYfGJHg_Ws-eSj"
       )
       .then(
         () => {
@@ -117,14 +117,14 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail} className="space-y-5 sm:space-y-6">
             <input
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Your Name"
               className="w-full bg-transparent border border-[#003934] rounded-md px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#003934]"
               required
             />
             <input
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Your Email"
               className="w-full bg-transparent border border-[#003934] rounded-md px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#003934]"
               required

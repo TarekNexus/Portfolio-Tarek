@@ -38,25 +38,18 @@ const Hero = () => {
             {/* 🎯 Buttons + Social */}
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a
-                href="/cv.pdf"
+                href="https://drive.google.com/file/d/1G0AEkBNPMrQ5gmP7sLfusBMM3rSQ1jXe/view?usp=drive_link" target="_blank"
                 download
                 className="flex items-center gap-2 border bg-[#003934] text-white font-medium px-6 py-3 rounded-full hover:bg-[#00291f] transition"
               >
-                Download CV <Download size={16} />
+                Resume <Download size={16} />
               </a>
 
               <div className="flex items-center gap-4 text-[#003934] mt-4 sm:mt-0">
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#005b51] transition"
-                >
-                  <Twitter />
-                </a>
+               
 
                 <a
-                  href="https://linkedin.com/in/tareknexus"
+                  href="https://www.linkedin.com/in/tarekdeveloper"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#005b51] transition"

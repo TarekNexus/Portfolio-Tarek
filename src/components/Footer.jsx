@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="flex items-center gap-6">
           <div className="flex gap-4 text-xl text-gray-500">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/tarekdeveloper"
               target="_blank"
               rel="noopener noreferrer"
             >
