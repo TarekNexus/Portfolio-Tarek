@@ -1,47 +1,64 @@
 [
-  {
-    "id": 1,
-    "title": "FoodKing",
-    "description": "FoodKing is a full-stack food sharing web application that connects donors and receivers to share surplus food. It allows users to add, update, request, and manage food items with secure authentication and responsive design.",
-    "features": [
-      "Email/Password & Google-based Authentication",
-      "CRUD operations for food items",
-      "TanStack Query for data fetching & mutation",
-      "Clean & recruiter-friendly UI with proper spacing"
-    ],
-    "technology": ["React", "Tailwind CSS", "Firebase", "Node.Js", "Express.js", "MongoDB"],
-    "live_link": "https://a11-food-king.netlify.app",
-    "github": "https://github.com/TarekNexus/Food-King-client",
-    "image": "https://i.ibb.co/Q3fGrJgH/pp.png"
-  },
-  {
-    "id": 2,
-    "title": "Green Plants",
-    "description": "Green Plants is a full-stack, mobile-responsive web application that empowers users to track and manage the care of their houseplants. Designed for plant enthusiasts, this platform offers features like adding new plants, setting watering schedules, tracking health, and more — all with secure, personalized user dashboards.",
-    "features": [
-      "Plant Management System",
-      "Dashboard with Overview and Stats",
-      "Secure Authentication",
-      "Dark/Light Theme Toggle"
-    ],
-    "technology": ["React", "Tailwind CSS", "Firebase", "Node.Js", "Express.js", "MongoDB"],
-    "live_link": "https://a10-green-plants.netlify.app",
-    "github": "https://github.com/TarekNexus/Green-Plants-Client",
-    "image": "https://i.ibb.co/BKZBNbML/project-2.png"
-  },
-  {
-    "id": 3,
-    "title": "Cratezy - Subscription Box Service Platform",
-    "description": "Cratezy is a personalized subscription box platform that allows users to browse, subscribe to, and manage monthly curated boxes tailored to their interests.",
-    "features": [
-      "Dynamic Content",
-      "Protected Routes",
-      "Authentication",
-      "Responsive UI"
-    ],
-    "technology": ["React", "Firebase", "Tailwind CSS"],
-    "live_link": "https://a9-cratezy-tarek.netlify.app",
-    "github": "https://github.com/TarekNexus/Cratezy-Subscription-Services",
-    "image": "https://i.ibb.co/s9NJtbnc/project-3.png"
-  }
+{
+  "id": 1,
+  "title": "Thikana - Smart Building Management System",
+  "description": "Thikana is a smart building management web app that enables users, members, and admins to manage apartments, rent, payments, coupons, and announcements through secure role-based dashboards.",
+  "features": [
+    "Role-Based Dashboard & Access Control for User, Member, and Admin",
+    "Apartment listing with search, filter, and pagination",
+    "Stripe-based rent payment integration",
+    "Apartment Management & Agreement System"
+  ],
+  "technology": ["React", "Tailwind CSS", "JWT", "Firebase", "Node.js", "Express.js", "MongoDB", "Stripe.js", "Axios"],
+  "live_link": "https://thikana.netlify.app",
+  "github": "https://github.com/TarekNexus/thikana-client",
+  "image": "https://i.ibb.co/dJPb7dFY/Screenshot-2025-07-31-015203.png"
+}
+,
+ {
+  "id": 2,
+  "title": "FoodKing - Food Sharing Web Application",
+  "description": "FoodKing is a food sharing web application that allows users to share surplus food with others, helping reduce food waste and support the community.",
+  "features": [
+    "Users can easily add their food items to the website and update or remove them anytime",
+    "Users can ask for food items shared by others whenever they need",
+    "Everyone logs in with their own account to keep their information and food items private and safe.",
+        "TanStack Query for data fetching & mutation"
+  ],
+  "technology": ["Tailwind CSS",
+    "Firebase",
+    "MongoDB",
+    "Express.js",
+    "React",
+    "Node.js",
+    "JWT",
+    "Axios"],
+  "live_link": "https://a11-food-king.netlify.app",
+  "github": "https://github.com/TarekNexus/Food-King-client",
+  "image": "https://i.ibb.co/RpXzjkxw/Screenshot-2025-07-31-015333.png"
+}
+,
+ {
+  "id": 3,
+  "title": "Green Plants - Plant Care Tracker",
+  "description": "Green Plants is a user-friendly plant management web app that helps users track, update, and manage houseplants along with their care schedules.",
+  "features": [
+    "Add, update, and delete plants with care schedules.",
+    "Dashboard showing an overview and care statistics.",
+    "Secure user login for personalized plant management.",
+    "Dark/Light Theme Toggle"
+  ],
+  "technology": ["React",
+    "Tailwind CSS",
+    "JWT",
+    "Axios",
+    "Firebase",
+    "Node.js",
+    "Express.js",
+    "MongoDB"],
+  "live_link": "https://a10-green-plants.netlify.app",
+  "github": "https://github.com/TarekNexus/Green-Plants-Client",
+  "image": "https://i.ibb.co/BKZBNbML/project-2.png"
+}
+ 
 ]

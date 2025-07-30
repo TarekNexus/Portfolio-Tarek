@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
         viewport={{ once: true }}
         className="w-full md:w-1/2 flex flex-col justify-center space-y-4"
       >
-        <h3 className="text-2xl font-semibold">
+        <h3 className="text-2xl font-bold text-[#003934]">
           {project.title || "Untitled Project"}
         </h3>
         <p className="text-md">
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
               whileHover={{ scale: 1.05 }}
               key={idx}
               type="button"
-              className="bg-[#003934] text-white px-3 py-1 rounded-full text-sm"
+              className="bg-[#003934] text-white px-3 py-1 rounded-lg text-sm"
             >
               {tech}
             </motion.button>
