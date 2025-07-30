@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import image from "../assets/about.jpg";
+import image from "../assets/nn.jpg";
 
 const About = () => {
   return (
@@ -26,9 +26,7 @@ const About = () => {
           viewport={{ once: true }}
           className="mb-10 text-sm md:text-base text-center max-w-xl mx-auto"
         >
-          I'm a MERN Stack Developer with a passion for clean code and elegant
-          design. I specialize in building responsive, user-focused web
-          applications.
+         I'm a Frontend Developer with a passion for clean code and elegant design. I specialize in building responsive, user-focused interfaces using React, Next.js, Tailwind CSS, and modern JavaScript frameworks.
         </motion.p>
 
         {/* Card container */}
@@ -57,47 +55,38 @@ const About = () => {
           </motion.div>
 
           {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.6, duration: 0.7 }}
-            viewport={{ once: true }}
-            className="w-full lg:w-1/2"
-          >
-            <h2 className="text-xl font-bold text-[#003934] mb-4">
-              Professional & Focused
-            </h2>
-            <p className="text-lg text-gray-700 mb-3">
-              Hi, I’m <span className="font-semibold">Md. Tarek</span>, a MERN
-              Stack Developer based in Bangladesh. I specialize in building
-              modern, scalable, and user-friendly web apps using React, Node.js,
-              and MongoDB.
-            </p>
-            <p className="text-gray-600 mb-3">
-              My passion lies in crafting impactful digital experiences with
-              clean, efficient code. I enjoy working on full-stack solutions,
-              learning new technologies, and pushing the boundaries of user
-              interaction.
-            </p>
-            <p className="text-gray-600 mb-3">
-              In addition to building solo projects, I enjoy collaborating with
-              others — sharing ideas, writing clean code, and contributing to
-              meaningful solutions. I believe great teamwork and clear
-              communication are just as important as technical skills.
-            </p>
-            <p className="text-gray-600">
-              Outside of coding, I’m into football, design inspiration, and
-              staying up-to-date with tech trends.
-            </p>
-            <div className="mt-6 text-right">
-              <p className="font-semibold text-[#003934]">
-                MERN Stack Web Developer
-              </p>
-              <p className="text-sm text-gray-500">
-                Problem Solver & Lifelong Learner
-              </p>
-            </div>
-          </motion.div>
+         <motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.6, duration: 0.7 }}
+  viewport={{ once: true }}
+  className="w-full lg:w-1/2"
+>
+  <h2 className="text-xl font-bold text-[#003934] mb-4">
+    Creative & Detail-Oriented
+  </h2>
+  <p className="text-lg text-gray-700 mb-3">
+    Hi, I’m <span className="font-semibold">Md. Tarek</span>, a Frontend Developer based in Bangladesh. I specialize in building responsive and visually appealing web interfaces using React.js, Next.js, and Tailwindcss.
+  </p>
+  <p className="text-gray-600 mb-3">
+    I’m passionate about clean code, seamless user experiences, and thoughtful UI design. I love turning complex problems into simple, interactive, and elegant solutions.
+  </p>
+  <p className="text-gray-600 mb-3">
+    Beyond solo projects, I thrive in collaborative environments — where ideas flow, code quality matters, and great user experience is the shared goal. Clear communication and teamwork are as essential to me as technical skill.
+  </p>
+  <p className="text-gray-600">
+    Outside of coding, I enjoy exploring UI/UX design trends, watching football, and staying updated with the ever-evolving frontend ecosystem.
+  </p>
+  <div className="mt-6 text-right">
+    <p className="font-semibold text-[#003934]">
+      Frontend Web Developer
+    </p>
+    <p className="text-sm text-gray-500">
+       React & Next.js Enthusiast
+    </p>
+  </div>
+</motion.div>
+
         </motion.div>
       </div>
     </section>

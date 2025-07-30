@@ -15,7 +15,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col-reverse lg:flex-row items-center justify-between pt-10 w-11/12 max-w-[1600px] mx-auto"
+          className="flex flex-col-reverse lg:flex-row items-center justify-between pt-0 md:pt-10 w-11/12 max-w-[1600px] mx-auto"
         >
           {/* 👉 Left Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left px-4">
@@ -27,7 +27,7 @@ const Hero = () => {
               Frontend Developer | React & Next.js Enthusiast | Building Scalable & Modern Web Apps
             </h3>
 
-            <p className="text-gray-700 mb-8 max-w-9/12 mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-gray-700   mb-8 max-w-12/12 md:max-w-9/12 mx-auto lg:mx-0 leading-relaxed">
               I build full-stack web applications using MongoDB, Express, React.js, Next.js, and Node.js — solving complex problems with clean, scalable code and delightful UI.
             </p>
 
