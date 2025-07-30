@@ -14,7 +14,7 @@ const Footer = () => {
               <img className="w-36 md:w-40" src={logo} alt="Logo" />
             </div>
           </Link>
-          <p className="text-sm text-gray-500 mt-2">MERN Stack Web Developer</p>
+          <p className="text-sm text-gray-500 mt-2">Frontend Web Developer</p>
         </div>
 
         {/* Right Section */}
