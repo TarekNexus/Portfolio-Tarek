@@ -74,7 +74,7 @@ const EducationSection = () => {
           viewport={{ once: true }}
         >
           Academic background focused on Computer Science and IT, supporting my
-          skills in software development and MERN-stack web technologies
+          skills in software development and  web technologies
         </motion.p>
 
         {/* Cards */}
