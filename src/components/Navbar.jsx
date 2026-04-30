@@ -30,6 +30,11 @@ const Navbar = () => {
           Projects
         </a>
       </li>
+      <li>
+        <a href="#experience" className="hover:text-[#003934]">
+         Experience
+        </a>
+      </li>
     </>
   );
 
