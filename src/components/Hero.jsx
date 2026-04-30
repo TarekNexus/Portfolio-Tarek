@@ -24,17 +24,17 @@ const Hero = () => {
               <span className="text-gray-900 font-medium">I'm</span> Md. TAREK
             </h1>
             <h3 className="text-lg text-gray-600 font-medium mb-6">
-              Frontend Developer | React & Next.js Enthusiast | Building Scalable & Modern Web Apps
+             Full Stack Developer | React, Next.js & TypeScript Specialist | Building Scalable & High-Performance Web Applications
             </h3>
 
             <p className="text-gray-700   mb-8 max-w-12/12 md:max-w-9/12 mx-auto lg:mx-0 leading-relaxed">
-              I build full-stack web applications using MongoDB, Express, React.js, Next.js, and Node.js — solving complex problems with clean, scalable code and delightful UI.
+I build modern full-stack web applications using MongoDB, PostgreSQL, Express.js, React.js, Next.js, and Node.js — focusing on clean architecture, scalable systems, and intuitive user experiences. With 1+ years of experience, I develop responsive interfaces, integrate secure APIs, and collaborate in team-driven environments to deliver high-performance digital products.
             </p>
 
             {/* Buttons & Socials */}
             <div className="flex flex-col sm:flex-row  md:justify-center md:py-10 lg:py-0 lg:justify-start items-center gap-4">
               <a
-                href="https://drive.google.com/file/d/1m-lABtG6kch75ySYmDENo5VxhhusAdvR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1jZnsTGr0ZYNDgBz-PVeBBwTutgExGq9Z/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#003934] text-white rounded-full font-semibold shadow hover:bg-[#00291f] transition"

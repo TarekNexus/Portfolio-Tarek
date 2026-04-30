@@ -1,6 +1,30 @@
 [
 {
   "id": 1,
+  "title": "PharmaPlus - Smart Pharmacy Management System",
+  "description": "PharmaPlus is a full stack e-commerce web application that allows customers, sellers, and admins to manage medicine shopping efficiently. Customers can browse medicines, add them to the cart, place orders, and track status. Sellers manage their inventory and fulfill orders, while admins oversee the platform, manage users, medicines, and categories.",
+  "features": [
+    "The platform supportsCustomer, Seller, and Admin roles, eachwith different permissions and dashboards.",
+    "Customers can browse medicines, add items to the cart, and place orderswithCash onDelivery (COD).",
+    "Sellers can add, update, and manage medicines,while admins can manage users, orders, and categories."
+  ],
+  "technology": ["Tailwind CSS",
+    "shadcn",
+    "JavaScript",
+    "TypeScript",
+    "Next.js",
+    "Better Auth",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Prisma"],
+  "live_link": "https://pharma-plus-client.vercel.app/",
+  "github": "https://github.com/TarekNexus/PharmaPlus-client",
+  "image": "https://i.ibb.co.com/XrmtxTrt/Screenshot-2026-04-30-190928.png"
+}
+,
+{
+  "id": 2,
   "title": "Thikana - Smart Building Management System",
   "description": "Thikana is a smart building management web app that enables users, members, and admins to manage apartments, rent, payments, coupons, and announcements through secure role-based dashboards.",
   "features": [
@@ -13,10 +37,9 @@
   "live_link": "https://thikana.netlify.app",
   "github": "https://github.com/TarekNexus/thikana-client",
   "image": "https://i.ibb.co/dJPb7dFY/Screenshot-2025-07-31-015203.png"
-}
-,
+},
  {
-  "id": 2,
+  "id": 3,
   "title": "FoodKing - Food Sharing Web Application",
   "description": "FoodKing is a food sharing web application that allows users to share surplus food with others, helping reduce food waste and support the community.",
   "features": [
@@ -37,28 +60,6 @@
   "github": "https://github.com/TarekNexus/Food-King-client",
   "image": "https://i.ibb.co/RpXzjkxw/Screenshot-2025-07-31-015333.png"
 }
-,
- {
-  "id": 3,
-  "title": "Green Plants - Plant Care Tracker",
-  "description": "Green Plants is a user-friendly plant management web app that helps users track, update, and manage houseplants along with their care schedules.",
-  "features": [
-    "Add, update, and delete plants with care schedules.",
-    "Dashboard showing an overview and care statistics.",
-    "Secure user login for personalized plant management.",
-    "Dark/Light Theme Toggle"
-  ],
-  "technology": ["React",
-    "Tailwind CSS",
-    "JWT",
-    "Axios",
-    "Firebase",
-    "Node.js",
-    "Express.js",
-    "MongoDB"],
-  "live_link": "https://a10-green-plants.netlify.app",
-  "github": "https://github.com/TarekNexus/Green-Plants-Client",
-  "image": "https://i.ibb.co/BKZBNbML/project-2.png"
-}
+
  
 ]

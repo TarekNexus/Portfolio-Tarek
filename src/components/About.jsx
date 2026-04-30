@@ -63,28 +63,37 @@ const About = () => {
   className="w-full lg:w-1/2"
 >
   <h2 className="text-xl font-bold text-[#003934] mb-4">
-    Creative & Detail-Oriented
-  </h2>
-  <p className="text-lg text-gray-700 mb-3">
-    Hi, I’m <span className="font-semibold">Md. Tarek</span>, a Frontend Developer based in Bangladesh. I specialize in building responsive and visually appealing web interfaces using React.js, Next.js, and Tailwindcss.
+  Passionate Full Stack Developer
+</h2>
+
+<p className="text-lg text-gray-700 mb-3">
+  Hi, I’m <span className="font-semibold">Md. Tarek</span>, a Full Stack Developer based in Bangladesh. My journey into programming started with curiosity about how websites work — which quickly turned into a passion for building complete, real-world web applications.
+</p>
+
+<p className="text-gray-600 mb-3">
+  I specialize in developing scalable and user-focused applications using React.js, Next.js, Node.js, Express.js, MongoDB, and PostgreSQL. I enjoy working across the full stack — from designing clean, responsive interfaces to building secure APIs and managing databases.
+</p>
+
+<p className="text-gray-600 mb-3">
+  What I enjoy most is solving complex problems and transforming ideas into smooth, interactive digital experiences. Whether it’s optimizing performance, structuring clean architecture, or crafting intuitive UI/UX — I always focus on writing maintainable and high-quality code.
+</p>
+
+<p className="text-gray-600 mb-3">
+  I’ve worked on multiple team-driven projects where collaboration, communication, and attention to detail were key to delivering impactful solutions. I believe great products are built not just with code, but with teamwork and shared vision.
+</p>
+
+<p className="text-gray-600">
+  Outside of programming, I enjoy exploring modern UI/UX design trends, learning new technologies, and watching football. I’m always curious, always learning, and always striving to grow as a developer.
+</p>
+
+<div className="mt-6 text-right">
+  <p className="font-semibold text-[#003934]">
+    Full Stack Developer
   </p>
-  <p className="text-gray-600 mb-3">
-    I’m passionate about clean code, seamless user experiences, and thoughtful UI design. I love turning complex problems into simple, interactive, and elegant solutions.
+  <p className="text-sm text-gray-500">
+    React • Next.js • Node.js • MongoDB
   </p>
-  <p className="text-gray-600 mb-3">
-    Beyond solo projects, I thrive in collaborative environments — where ideas flow, code quality matters, and great user experience is the shared goal. Clear communication and teamwork are as essential to me as technical skill.
-  </p>
-  <p className="text-gray-600">
-    Outside of coding, I enjoy exploring UI/UX design trends, watching football, and staying updated with the ever-evolving frontend ecosystem.
-  </p>
-  <div className="mt-6 text-right">
-    <p className="font-semibold text-[#003934]">
-      Frontend Web Developer
-    </p>
-    <p className="text-sm text-gray-500">
-       React & Next.js Enthusiast
-    </p>
-  </div>
+</div>
 </motion.div>
 
         </motion.div>

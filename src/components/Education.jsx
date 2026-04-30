@@ -9,7 +9,7 @@ const educationData = [
     subject: "Computer Science & Technology",
     university: "Graphic Arts Institute, Dhaka",
     graduation_date: "2024-Present",
-    cgpa: "3.93 (up to 3rd semester) / 4.00",
+    cgpa: "3.93 (up to 5th semester) / 4.00",
   },
   {
     degree: "Secondary School Certificate (Voc)",
